@@ -1,1 +1,323 @@
-Test :)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMU 99-520: Applied Software Engineering for the Real World with Distributed Teams</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 5px;
+        }
+        
+        .course-id {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .instructor-info {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .instructor-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #999;
+        }
+        
+        .schedule {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        
+        .schedule th {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .schedule tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .schedule td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-color);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #777;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .highlight {
+            background-color: #fffaed;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="course-id">CMU 99-520</div>
+        <h1>Applied Software Engineering for the Real World with Distributed Teams</h1>
+    </header>
+
+    <div class="section">
+        <h2>Course Overview</h2>
+        <p>
+            This course offers students a unique opportunity to gain real-world software engineering experience while working in cross-campus teams combining students from Pittsburgh and Doha. Teams will collaborate on open-source projects guided by industry mentors, navigating the technical and cultural dynamics of global software development. Most of the students' effort will focus on developing software for real-world projects, with regular mentor meetings to refine requirements, implement solutions, and publish contributions. Faculty-led lectures will complement this work, covering practical topics to support students throughout the experience. This course provides hands-on learning that mirrors an internship, fostering technical skills, cross-cultural collaboration, and real-world problem-solving.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Course Info for Summer 2025</h2>
+        <p><strong>Meeting Time:</strong> Monday, Tuesday, Wednesday, 8:00am/3:00pm - 9:20am/4:20pm on Zoom</p>
+        
+        <p><strong>Instructors:</strong> Eduardo Feo Flushing, Austin Henley, Stephen Walli</p>
+        <p><strong>Email:</strong> efeoflus@andrew.cmu.edu, azhenley@cmu.edu, swalli@andrew.cmu.edu</p>
+        <p><strong>Office Hours:</strong> By Appointment</p>
+    </div>
+
+    <div class="section">
+        <h2>Course Schedule</h2>
+        
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th width="10%">Week</th>
+                    <th width="15%">Date</th>
+                    <th width="45%">Topic</th>
+                    <th width="30%">Materials</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 - Tue</td>
+                    <td>May 13, 2025</td>
+                    <td>Course Introduction and Distributed Teams Overview</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>1 - Wed</td>
+                    <td>May 15, 2025</td>
+                    <td>Communication Strategies for Remote Collaboration</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>2 - Mon</td>
+                    <td>May 20, 2025</td>
+                    <td>Git Workflows for Distributed Teams</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>May 22, 2025</td>
+                    <td>Project Requirements and Planning</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>May 27, 2025</td>
+                    <td>Agile Methodologies: Scrum for Distributed Teams</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>May 29, 2025</td>
+                    <td>Team Formation and Project Ideation</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>June 3, 2025</td>
+                    <td>Software Architecture for Distributed Development</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>June 5, 2025</td>
+                    <td>Continuous Integration/Continuous Deployment</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>June 10, 2025</td>
+                    <td>Code Review Best Practices</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>June 12, 2025</td>
+                    <td>Testing Strategies for Distributed Teams</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>June 17, 2025</td>
+                    <td>Project Milestone 1 Presentations</td>
+                    <td><a href="#" class="btn">Guidelines</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>June 19, 2025</td>
+                    <td>Technical Documentation and Knowledge Sharing</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>June 24, 2025</td>
+                    <td>Distributed Database Design and Management</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>June 26, 2025</td>
+                    <td>Scalable Architecture and Microservices</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>July 1, 2025</td>
+                    <td>Security Considerations for Distributed Applications</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>July 3, 2025</td>
+                    <td>Project Work Session</td>
+                    <td>No slides</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>July 8, 2025</td>
+                    <td>Performance Optimization and Monitoring</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>July 10, 2025</td>
+                    <td>Project Milestone 2 Presentations</td>
+                    <td><a href="#" class="btn">Guidelines</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>July 15, 2025</td>
+                    <td>Conflict Resolution and Team Dynamics</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>July 17, 2025</td>
+                    <td>Managing Technical Debt</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>July 22, 2025</td>
+                    <td>DevOps for Distributed Teams</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>July 24, 2025</td>
+                    <td>Project Work Session</td>
+                    <td>No slides</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>July 29, 2025</td>
+                    <td>Final Project Presentations</td>
+                    <td><a href="#" class="btn">Guidelines</a></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>July 31, 2025</td>
+                    <td>Course Recap and Industry Best Practices</td>
+                    <td><a href="#" class="btn">Slides</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>
